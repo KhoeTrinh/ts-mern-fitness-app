@@ -1,5 +1,7 @@
+import React from "react";
+
 type Props = {
-    children: string
+    children: React.ReactNode
 };
 
 const HText = ({children}: Props) => {
