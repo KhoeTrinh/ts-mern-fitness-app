@@ -76,9 +76,9 @@ const Benefits = ({ SSP }: Props) => {
                     viewport={{ once: true, amount: 0.5 }}
                     variants={container}
                 >
-                    {benefits.map((benefit: BenefitType) => (
+                    {benefits.map((benefit: BenefitType, index) => (
                         <Benefit
-                            key={benefit.title}
+                            key={index}
                             icon={benefit.icon}
                             title={benefit.title}
                             description={benefit.description}
